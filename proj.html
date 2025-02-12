@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Weather Viewer</title>
+    <link rel="stylesheet" href="./proj.css" />
+    <link rel="icon" type="image/x-icon" href="./Leonardo_Phoenix_a_small_circular_favicon_image_featuring_the_3.jpg">
+</head>
+
+<body class="sde">
+    <h1 class="weat">Weather Palette</h1>
+    <div class="container">
+        <p class="simple">Hello! Select A City to view it's Weather.</p>
+    </div>
+    <div id="conditionImage"></div>
+
+
+    <div class="searchContainer">
+        <div class="dropdown">
+            <input type="text" onmouseup="handleMouseUp()" id="searchbox" onfocus="handleFocus()"
+                onkeyup="search_city()" name="search" placeholder="Search for a city">
+            <div class="hidelist">
+                <div class="mainList">
+
+                </div>
+                <div class="actions">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="weatherDisplay">
+            <div class="weatherDisplayContent">
+                <p class="showCity">City Selected: <span id="selectedCity"></span></p>
+                <p class="showCity">Temperature: <span id="temperature"></span></p>
+                <p class="showCity">Condition: <span id="cond"></span></p>
+                <p class="showCity">Humidity: <span id="hum"></span></p>
+                <p class="showCity">Wind Speed(mph): <span id="windinmph"></span></p>
+                <p class="showCity">Wind Speed(kmh): <span id="windinkmh"></span></p>
+            </div>
+            <div class="weatherDisplayContent">
+                <p class="showCity">Precipitation: <span id="preci"></span></p>
+                <p class="showCity">High: <span id="high"></span></p>
+                <p class="showCity">Low: <span id="low"></span></p>
+                <p class="showCity">High(celcius): <span id="highcel"></span></p>
+                <p class="showCity">Low(celcius): <span id="lowcel"></span></p>
+                <p class="showCity">Date: <span id="date"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="proj.js"></script>
+</body>
+
+</html>
